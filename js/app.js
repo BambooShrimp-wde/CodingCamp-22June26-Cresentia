@@ -430,7 +430,7 @@ const CLOUD_PALETTE = [
   { r: 255, g: 255, b: 255 },  // pure white core
   { r: 219, g: 234, b: 254 },  // blue-100
   { r: 191, g: 219, b: 254 },  // blue-200
-  { r: 224, g: 242, b: 254 },  // sky-100
+  { r: 224, g: 242, b: 300 },  // sky-100
   { r: 186, g: 230, b: 253 },  // sky-200
 ];
 
@@ -459,7 +459,7 @@ function makeCloud(xFraction) {
     x:      xFraction,           // leading edge, fraction of canvas width
     y:      baseY,
     puffs,
-    speed:  0.000018 + Math.random() * 0.000022, // very slow drift
+    speed:  0.00018 + Math.random() * 0.00052, // very slow drift
     alpha:  0.55 + Math.random() * 0.3,
   };
 }
